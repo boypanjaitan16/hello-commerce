@@ -1,4 +1,4 @@
-package com.boy.pjtn.hello.config;
+package com.boy.pjtn.hello.configs;
 
 import org.springframework.context.annotation.Configuration;
 import io.github.cdimascio.dotenv.Dotenv;

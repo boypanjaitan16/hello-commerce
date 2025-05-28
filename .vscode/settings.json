@@ -57,5 +57,8 @@
       "readOnly": false,
       "connectionTimeout": 30
     }
-  ]
+  ],
+  "[sql]": {
+    "editor.defaultFormatter": "dbcode.dbcode"
+  }
 }

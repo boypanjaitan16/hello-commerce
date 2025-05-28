@@ -1,10 +1,10 @@
-package com.boy.pjtn.hello.service;
+package com.boy.pjtn.hello.services;
 
 import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
-import com.boy.pjtn.hello.model.User;
-import com.boy.pjtn.hello.repository.UserRepository;
+import com.boy.pjtn.hello.models.User;
+import com.boy.pjtn.hello.repositories.UserRepository;
 
 @Service
 public class UserService {
