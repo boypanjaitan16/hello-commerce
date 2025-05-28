@@ -1,0 +1,61 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.fixAll": "always"
+  },
+  "editor.defaultFormatter": "redhat.java",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.jdt.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+      "default": true
+    }
+  ],
+  "java.format.enabled": true,
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.errors.incompleteClasspath.severity": "warning",
+  "java.configuration.maven.userSettings": "${workspaceFolder}/.mvn/settings.xml",
+  "files.associations": {
+    "*.properties": "properties",
+    "*.yml": "yaml"
+  },
+  "terminal.integrated.env.windows": {
+    "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64"
+  },
+  "java.import.gradle.enabled": false,
+  "java.import.maven.enabled": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.completion.enabled": true,
+  "java.debug.settings.hotCodeReplace": "auto",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "dbcode.connections": [
+    {
+      "connectionId": "6eMoSu5YVIzxx9q9CU6Yz",
+      "name": "hello",
+      "driver": "postgres",
+      "color": "#00A6FF",
+      "connectionType": "host",
+      "host": "localhost",
+      "port": 5432,
+      "ssl": false,
+      "username": "root",
+      "password": "",
+      "savePassword": "secretStorage",
+      "database": "hello",
+      "readOnly": false,
+      "connectionTimeout": 30
+    }
+  ]
+}
