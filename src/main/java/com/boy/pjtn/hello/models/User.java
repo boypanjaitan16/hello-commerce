@@ -37,25 +37,19 @@ public class User {
   @Column(nullable = false)
   private String password;
 
-  @Column(nullable = false, length = 100)
+  @Column(nullable = false)
   private String fullName;
 
-  @Column(length = 20)
   private String phone;
 
-  @Column(length = 200)
   private String address;
 
-  @Column(length = 100)
   private String city;
 
-  @Column(length = 100)
   private String state;
 
-  @Column(length = 20)
   private String zipCode;
 
-  @Column(length = 100)
   private String country;
 
   @Builder.Default
