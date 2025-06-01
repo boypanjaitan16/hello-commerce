@@ -4,10 +4,10 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 import com.boy.pjtn.hello.models.ProductCategory;
 import com.boy.pjtn.hello.repositories.ProductCategoryRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Component
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class ProductCategorySeeder {
   private final ProductCategoryRepository productCategoryRepository;
 

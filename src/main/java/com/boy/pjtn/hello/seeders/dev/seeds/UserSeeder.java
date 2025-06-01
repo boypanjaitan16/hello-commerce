@@ -8,11 +8,11 @@ import com.boy.pjtn.hello.models.Role;
 import com.boy.pjtn.hello.models.User;
 import com.boy.pjtn.hello.repositories.RoleRepository;
 import com.boy.pjtn.hello.repositories.UserRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Component
 @Profile("dev")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class UserSeeder {
   private final UserRepository userRepository;
   private final RoleRepository roleRepository;

@@ -10,7 +10,10 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
+import com.boy.pjtn.hello.exceptions.BadRequestException;
 import com.boy.pjtn.hello.exceptions.DataNotFoundException;
+import com.boy.pjtn.hello.exceptions.UnauthenticatedException;
+import com.boy.pjtn.hello.exceptions.UnauthorizedException;
 import com.boy.pjtn.hello.utils.ApiResponse;
 
 @RestControllerAdvice
@@ -19,6 +22,21 @@ public class GlobalExceptionHandler {
   @ExceptionHandler(DataNotFoundException.class)
   public ResponseEntity<ApiResponse<Object>> handleDataNotFound(DataNotFoundException ex) {
     return buildErrorResponse(HttpStatus.NOT_FOUND, ex.getMessage());
+  }
+
+  @ExceptionHandler(BadRequestException.class)
+  public ResponseEntity<ApiResponse<Object>> handleBadRequest(BadRequestException ex) {
+    return buildErrorResponse(HttpStatus.BAD_REQUEST, ex.getMessage());
+  }
+
+  @ExceptionHandler(UnauthorizedException.class)
+  public ResponseEntity<ApiResponse<Object>> handleUnauthorized(UnauthorizedException ex) {
+    return buildErrorResponse(HttpStatus.UNAUTHORIZED, ex.getMessage());
+  }
+
+  @ExceptionHandler(UnauthenticatedException.class)
+  public ResponseEntity<ApiResponse<Object>> handleUnauthenticated(UnauthenticatedException ex) {
+    return buildErrorResponse(HttpStatus.UNAUTHORIZED, ex.getMessage());
   }
 
   @ExceptionHandler(NoHandlerFoundException.class)

@@ -4,10 +4,10 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 import com.boy.pjtn.hello.models.Role;
 import com.boy.pjtn.hello.repositories.RoleRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Component
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class RoleSeeder {
 
   private final RoleRepository roleRepository;

@@ -7,11 +7,11 @@ import com.boy.pjtn.hello.seeders.RoleSeeder;
 import com.boy.pjtn.hello.seeders.dev.seeds.ProductSeeder;
 import com.boy.pjtn.hello.seeders.dev.seeds.UserSeeder;
 import jakarta.annotation.PostConstruct;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Component
 @Profile("dev")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class DevDatabaseSeeder {
   private final UserSeeder userSeeder;
   private final RoleSeeder roleSeeder;

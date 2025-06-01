@@ -8,11 +8,11 @@ import com.boy.pjtn.hello.models.Product;
 import com.boy.pjtn.hello.models.ProductCategory;
 import com.boy.pjtn.hello.repositories.ProductCategoryRepository;
 import com.boy.pjtn.hello.repositories.ProductRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Component
 @Profile("dev")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class ProductSeeder {
   private final ProductRepository productRepository;
   private final ProductCategoryRepository productCategoryRepository;
